@@ -1,7 +1,7 @@
 /*
 <?php
 session_start();
-$forceSingle = (intval($_SESSION['user_id']) == 0)?1:0;
+$forceSingle = ( intval( $_SESSION['user_id'] ) == 0 ) ? 1 : 0;
 
 ?>
 */

@@ -2,9 +2,8 @@
 
 session_start();
 
-require("class.Database.php");
+require( "class.Database.php" );
 $db = &Database::getInstance();
-
 
 
 /*
@@ -20,48 +19,63 @@ $db = &Database::getInstance();
 		LGN: 1620-1999 punten (luitenant-generaal)
 		GEN: 2000 punten (generaal)
 		*/
-		
-$ranks = array('Soldaat', 'Korporaal', 'Sergant', 'Majoor', 'Adjudant', 'Luitenant', 'Kapitein', 'Kolonel', 'Generaal-Majoor', 'Luitenant-Generaal', 'Generaal');
+
+$ranks = array(
+	'Soldaat',
+	'Korporaal',
+	'Sergant',
+	'Majoor',
+	'Adjudant',
+	'Luitenant',
+	'Kapitein',
+	'Kolonel',
+	'Generaal-Majoor',
+	'Luitenant-Generaal',
+	'Generaal'
+);
 
 
-$uid = $_SESSION['user_id'];
-$user = $db->query("SELECT * FROM `global__PlayerInfo` WHERE `player_id`='$uid'");
-if($row = $db->assoc($user)) {
-	extract($row);
-	
-	$rank = floor(sqrt(intval($row['points']) / 20));
-	$top_rank = floor(sqrt(intval($row['top_points']) / 20));
-	
-	if($shots_fired == 0) {
+$uid  = $_SESSION['user_id'];
+$user = $db->query( "SELECT * FROM `global__PlayerInfo` WHERE `player_id`='$uid'" );
+if ( $row = $db->assoc( $user ) ) {
+	extract( $row );
+
+	$rank     = floor( sqrt( intval( $row['points'] ) / 20 ) );
+	$top_rank = floor( sqrt( intval( $row['top_points'] ) / 20 ) );
+
+	if ( $shots_fired == 0 ) {
 		$accuracy = "100";
-	} else {
-		$accuracy = floor((100 / $shots_fired) * $shots_hit);
 	}
-	
-	if($shots_hit == 0) {
+	else {
+		$accuracy = floor( ( 100 / $shots_fired ) * $shots_hit );
+	}
+
+	if ( $shots_hit == 0 ) {
 		$efficienty = "100";
-	} else {
-		$efficienty = min(100, floor((100 / ($shots_hit/10)) * $kills));
 	}
-	
-	$distance = number_format($distance, 0, ",", ".");
+	else {
+		$efficienty = min( 100, floor( ( 100 / ( $shots_hit / 10 ) ) * $kills ) );
+	}
+
+	$distance = number_format( $distance, 0, ",", "." );
 }
 
 ?>
 
-<h2><?= $ranks[$rank] ?> <?= html_entity_decode($_SESSION['user_name'], ENT_NOQUOTES); ?></h2>
+<h2><?= $ranks[ $rank ] ?> <?= html_entity_decode( $_SESSION['user_name'], ENT_NOQUOTES ); ?></h2>
 <h3><?= $points ?> punten</h3>
-<br />
+<br/>
 
-Hoogst behaalde rang:<br><?= $ranks[$top_rank] ?><br />
-<br />
-Aantal gewonnen spellen: <?= $wins ?><br />
-Aantal kills: <?= $kills ?><br />
-<br />
+Hoogst behaalde rang:<br><?= $ranks[ $top_rank ] ?><br/>
+<br/>
+Aantal gewonnen spellen: <?= $wins ?><br/>
+Aantal kills: <?= $kills ?><br/>
+<br/>
 
-<span class="help" onmousemove="showPopup('Hoeveel van je schoten raak waren');" onmouseout="hidePopup();">Accuracy:</span> <?= $accuracy ?>%<br />
-Efficiency: <?= $efficienty ?>%<br />
+<span class="help" onmousemove="showPopup('Hoeveel van je schoten raak waren');"
+      onmouseout="hidePopup();">Accuracy:</span> <?= $accuracy ?>%<br/>
+Efficiency: <?= $efficienty ?>%<br/>
 
-<br />
-Afgelegde afstand:<br />
+<br/>
+Afgelegde afstand:<br/>
 <?= $distance ?> meter

@@ -1,7 +1,7 @@
 <?php
 
-require_once("../assets/php/class.Database.php");
-require_once("../assets/php/functions.php");
+require_once( "../assets/php/class.Database.php" );
+require_once( "../assets/php/functions.php" );
 
 $db = &Database::getInstance();
 
@@ -9,103 +9,106 @@ $db = &Database::getInstance();
 
 $time = time();
 
-if($_SERVER['REQUEST_METHOD'] == "POST") {
+if ( $_SERVER['REQUEST_METHOD'] == "POST" ) {
 	$action = $_POST['action'];
-	$id = intval($_POST['id']);
-	
+	$id     = intval( $_POST['id'] );
+
 	$saved = false;
-	
-	switch($action) {
+
+	switch ( $action ) {
 		case "add":
-			$type 		 = $db->prepare(htmlspecialchars($_POST['type']), 32);
-			$description = $db->prepare(htmlspecialchars($_POST['description']));
-			
-			$status 					= $db->prepare(htmlspecialchars($_POST['status']), 16);
-			$status_description 	= $db->prepare(htmlspecialchars($_POST['status_description']));
+			$type        = $db->prepare( htmlspecialchars( $_POST['type'] ), 32 );
+			$description = $db->prepare( htmlspecialchars( $_POST['description'] ) );
 
-			
+			$status             = $db->prepare( htmlspecialchars( $_POST['status'] ), 16 );
+			$status_description = $db->prepare( htmlspecialchars( $_POST['status_description'] ) );
+
+
 			$query = "INSERT INTO `dev__KnownBugs` (`type`, `description`, `timestamp`) VALUES ('$type', '$description', $time)";
-			$db->query($query);
-			
-			$bug = mysql_insert_id(); 
-			
-			$query = "INSERT INTO `dev__BugStatus` (`bug_id`, `status`, `description`, `timestamp`) VALUES ('$bug', '$status', '$status_description', '$time')";
-			$db->query($query);
-			
-			$saved = true;
-			
-			break;
-			
-		case "edit":
-			
-			if($id == 0) {
-				$saved = false;
-			} else {
-			
-				$type 		 = $db->prepare(htmlspecialchars($_POST['type']), 32);
-				$description = $db->prepare(htmlspecialchars($_POST['description']));
-				
-				$query = "UPDATE `dev__KnownBugs` SET `type`='$type', `description`='$description' WHERE `id`='$id'";
-				$db->query($query);
-				
-				$saved = true;
-				
-			}
-			
-			break;
-			
-		case "add_status":
-		
-			if($id == 0) {
-				$saved = false;
-			} else {
+			$db->query( $query );
 
-				$status 					= $db->prepare(htmlspecialchars($_POST['status']), 16);
-				$status_description 	= $db->prepare(htmlspecialchars($_POST['status_description']));
-				
-				$query = "INSERT INTO `dev__BugStatus` (`bug_id`, `status`, `description`, `timestamp`) VALUES ('$id', '$status', '$status_description', '$time')";
-				$db->query($query);
-				
-				$saved = true;
-			
-			}
-		
-		case 'del':
-			
-			if($id == 0) {
+			$bug = mysql_insert_id();
+
+			$query = "INSERT INTO `dev__BugStatus` (`bug_id`, `status`, `description`, `timestamp`) VALUES ('$bug', '$status', '$status_description', '$time')";
+			$db->query( $query );
+
+			$saved = true;
+
+			break;
+
+		case "edit":
+
+			if ( $id == 0 ) {
 				$saved = false;
-			} else {
-				$db->query("DELETE FROM `dev__BugStatus` WHERE `bug_id`='$id'");
-				$db->query("DELETE FROM `dev__KnownBugs` WHERE `id`='$id'");
+			}
+			else {
+
+				$type        = $db->prepare( htmlspecialchars( $_POST['type'] ), 32 );
+				$description = $db->prepare( htmlspecialchars( $_POST['description'] ) );
+
+				$query = "UPDATE `dev__KnownBugs` SET `type`='$type', `description`='$description' WHERE `id`='$id'";
+				$db->query( $query );
+
+				$saved = true;
+
+			}
+
+			break;
+
+		case "add_status":
+
+			if ( $id == 0 ) {
+				$saved = false;
+			}
+			else {
+
+				$status             = $db->prepare( htmlspecialchars( $_POST['status'] ), 16 );
+				$status_description = $db->prepare( htmlspecialchars( $_POST['status_description'] ) );
+
+				$query = "INSERT INTO `dev__BugStatus` (`bug_id`, `status`, `description`, `timestamp`) VALUES ('$id', '$status', '$status_description', '$time')";
+				$db->query( $query );
+
+				$saved = true;
+
+			}
+
+		case 'del':
+
+			if ( $id == 0 ) {
+				$saved = false;
+			}
+			else {
+				$db->query( "DELETE FROM `dev__BugStatus` WHERE `bug_id`='$id'" );
+				$db->query( "DELETE FROM `dev__KnownBugs` WHERE `id`='$id'" );
 				$saved = true;
 			}
-				
+
 			break;
 	} // SWITCH
-	
-	if($saved) {
-		die("{saved:true}");
+
+	if ( $saved ) {
+		die( "{saved:true}" );
 	}
-	
-	die("{saved:false}");
+
+	die( "{saved:false}" );
 } // POST
 
-$id = intval($_GET['id']);
+$id     = intval( $_GET['id'] );
 $action = $_GET['action'];
 
 
 $select_options = "";
 
-$status_list = array_reverse($readable_bug_status, true);
-foreach($status_list as $index=>$status) {
+$status_list = array_reverse( $readable_bug_status, true );
+foreach ( $status_list as $index => $status ) {
 	$select_options .= "<option value='$index'>$status</option>";
 } // FOREACH
 
-switch($action) {
+switch ( $action ) {
 	case "add":
-	
-		$select_options = str_replace("'0'>", "'0' selected>", $select_options);
-		
+
+		$select_options = str_replace( "'0'>", "'0' selected>", $select_options );
+
 		echo <<<EOADD
 	<input type="hidden" name="action" value="$action" />
 	
@@ -130,19 +133,19 @@ switch($action) {
 	</tr>
 	</table>
 EOADD;
-		
+
 		break;
-		
+
 	case "edit":
-		
-		if($id == 0) {
-			die();	
+
+		if ( $id == 0 ) {
+			die();
 		}
-		
-		$query = $db->query("SELECT `type`, `description` FROM `dev__KnownBugs` WHERE `id`='$id'");
-		if($row = $db->assoc($query)) {
+
+		$query = $db->query( "SELECT `type`, `description` FROM `dev__KnownBugs` WHERE `id`='$id'" );
+		if ( $row = $db->assoc( $query ) ) {
 //			extract($row);
-		
+
 			echo <<<EOEDIT
 	<input type="hidden" name="action" value="$action" />
 	<input type="hidden" name="id" value="$id" />
@@ -161,27 +164,27 @@ EOADD;
 	</table>
 EOEDIT;
 		}
-	
+
 		break;
-	
+
 	case "add_status":
-	
-		if($id == 0) {
-			die();	
+
+		if ( $id == 0 ) {
+			die();
 		}
-		
+
 		// select the next highest status as default:
 		$highest_status = 0;
-		$status_query = $db->query("SELECT `status` FROM `dev__BugStatus` WHERE `bug_id`='$id' ORDER BY `status` DESC LIMIT 0,1");
-		if($status = $db->assoc($status_query)) {
-			$highest_status = intval($status['status']);
+		$status_query   = $db->query( "SELECT `status` FROM `dev__BugStatus` WHERE `bug_id`='$id' ORDER BY `status` DESC LIMIT 0,1" );
+		if ( $status = $db->assoc( $status_query ) ) {
+			$highest_status = intval( $status['status'] );
 		}
-		$db->free($status_query);
-		
+		$db->free( $status_query );
+
 		// apply selection to the list
-		$select_status = $highest_status + (($highest_status < count($status_list) - 1)?1:0);
-		$select_options = str_replace("'$select_status'>", "'$select_status' selected>", $select_options);
-		
+		$select_status  = $highest_status + ( ( $highest_status < count( $status_list ) - 1 ) ? 1 : 0 );
+		$select_options = str_replace( "'$select_status'>", "'$select_status' selected>", $select_options );
+
 		echo <<<EOADD
 	<input type="hidden" name="action" value="$action" />
 	<input type="hidden" name="id" value="$id" />
@@ -201,7 +204,6 @@ EOEDIT;
 EOADD;
 
 		break;
-		
+
 } // SWITCH
 
-?>

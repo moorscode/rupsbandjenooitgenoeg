@@ -14,7 +14,7 @@
 $fromAjax = false;
 
 
-if(!isset($db)) {
+if ( ! isset( $db ) ) {
 	$fromAjax = true;
 	//$db = &Database::getInstance();
 }
@@ -28,16 +28,15 @@ $game_server_online = intval($status['game']);
 */
 
 // ps lists all processes, filtering only the SCREEN names of the servers
-$chat_server_online = (exec("ps aux | grep rupsChatServer | grep -v grep") != "");
-$game_server_online = (exec("ps aux | grep rupsGameServer | grep -v grep") != "");
+$chat_server_online = ( exec( "ps aux | grep rupsChatServer | grep -v grep" ) != "" );
+$game_server_online = ( exec( "ps aux | grep rupsGameServer | grep -v grep" ) != "" );
 
 
 // if no database has been defined; it's called from JavaScript, so output to the buffer
-if($fromAjax) {
-	$chat = ($chat_server_online)?1:0;
-	$game = ($game_server_online)?1:0;
-	
-	die("{'chatServer':$chat, 'gameServer':$game}");
+if ( $fromAjax ) {
+	$chat = ( $chat_server_online ) ? 1 : 0;
+	$game = ( $game_server_online ) ? 1 : 0;
+
+	die( "{'chatServer':$chat, 'gameServer':$game}" );
 }
 
-?>

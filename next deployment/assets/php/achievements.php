@@ -5,24 +5,24 @@
  *	mar 13th, 2010 @ 15:00 pm
 */
 
-function get_done_data($array, $achievement_id) {
-	foreach($array as $achievement) {
-		if($achievement['achievement_id'] == $achievement_id) {
+function get_done_data( $array, $achievement_id ) {
+	foreach ( $array as $achievement ) {
+		if ( $achievement['achievement_id'] == $achievement_id ) {
 			return $achievement;
 		}
 	}
 }
 
-function create_achievement($title, $description, $difficulty, $timestamp = -1) {
-	$class = ($timestamp == -1)?'incomplete':'complete';
-	
+function create_achievement( $title, $description, $difficulty, $timestamp = -1 ) {
+	$class = ( $timestamp == -1 ) ? 'incomplete' : 'complete';
+
 	echo "<div class='achievement $class'><h1>$title</h1><br>$description";
-	
-	if($timestamp > -1) {
-		setlocale(LC_TIME, "nl_NL");
-		echo "<br>" . strftime("%e %B %Y om %l:%M %p", $timestamp);
+
+	if ( $timestamp > -1 ) {
+		setlocale( LC_TIME, "nl_NL" );
+		echo "<br>" . strftime( "%e %B %Y om %l:%M %p", $timestamp );
 	}
-	
+
 	echo "</div>\n";
 }
 
@@ -30,50 +30,50 @@ die();
 
 session_start();
 
-$done = array();
+$done     = array();
 $done_ids = array();
 
 $show_first = array();
-$show_last = array();
+$show_last  = array();
 
 // check for database queued messages
-if(intval($_SESSION['user_id']) > 0) {
-	require("class.Database.php");
-	require_once("functions.php");
+if ( intval( $_SESSION['user_id'] ) > 0 ) {
+	require( "class.Database.php" );
+	require_once( "functions.php" );
 	$db = &Database::getInstance();
-	
+
 	$user_id = $_SESSION['user_id'];
-	
+
 	// list achievements, completed first.. rest later, ordered by difficulty easy -> hard
-	
+
 //	$query = $db->query("SELECT a.`id`, c.`timestamp`, a.`title`, a.`description` FROM `achievements__Achievements` AS a INNER JOIN `achievements__Completed` as c ON a.`id`=c.`achievement_id` WHERE c.`player_id`=".$client['user_id'] . " ORDER BY a.`difficulty` ASC");
-	
-	$query = $db->query("SELECT `achievement_id`, `timestamp` FROM `achievements__Completed` WHERE `player_id`=$user_id");
-	while($achieved = $db->assoc($query)) {
-		array_push($done, $achieved);
-		array_push($done_ids, $achieved['achievement_id']);
+
+	$query = $db->query( "SELECT `achievement_id`, `timestamp` FROM `achievements__Completed` WHERE `player_id`=$user_id" );
+	while ( $achieved = $db->assoc( $query ) ) {
+		array_push( $done, $achieved );
+		array_push( $done_ids, $achieved['achievement_id'] );
 	}
-	
-	$query = $db->query("SELECT `id`, `title`, `description`, `difficulty` FROM `achievements__Achievements` ORDER BY `difficulty` ASC");
-	while($achievement = $db->assoc($query)) {
-		
-		if(in_array($achievement['id'], $done_ids)) {
+
+	$query = $db->query( "SELECT `id`, `title`, `description`, `difficulty` FROM `achievements__Achievements` ORDER BY `difficulty` ASC" );
+	while ( $achievement = $db->assoc( $query ) ) {
+
+		if ( in_array( $achievement['id'], $done_ids ) ) {
 			// done
-			array_push($show_first, $achievement);
-		} else {
+			array_push( $show_first, $achievement );
+		}
+		else {
 			// not done
-			array_push($show_last, $achievement);
+			array_push( $show_last, $achievement );
 		}
 	}
 }
 
-foreach($show_first as $achievement) {
-	$done_data = get_done_data($done, $achievement['id']);
-	
-	create_achievement($achievement['title'], $achievement['description'], $achievement['difficulty'], $done_data['timestamp']);
+foreach ( $show_first as $achievement ) {
+	$done_data = get_done_data( $done, $achievement['id'] );
+
+	create_achievement( $achievement['title'], $achievement['description'], $achievement['difficulty'], $done_data['timestamp'] );
 }
 
-foreach($show_last as $achievement) {
-	create_achievement($achievement['title'], $achievement['description'], $achievement['difficulty']);
+foreach ( $show_last as $achievement ) {
+	create_achievement( $achievement['title'], $achievement['description'], $achievement['difficulty'] );
 }
-?>

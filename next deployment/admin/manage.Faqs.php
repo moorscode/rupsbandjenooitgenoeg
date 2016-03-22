@@ -1,7 +1,7 @@
 <?php
 
-require_once("../assets/php/class.Database.php");
-require_once("../assets/php/functions.php");
+require_once( "../assets/php/class.Database.php" );
+require_once( "../assets/php/functions.php" );
 
 $db = &Database::getInstance();
 
@@ -9,57 +9,58 @@ $db = &Database::getInstance();
 
 $time = time();
 
-if($_SERVER['REQUEST_METHOD'] == "POST") {
+if ( $_SERVER['REQUEST_METHOD'] == "POST" ) {
 	$action = $_POST['action'];
-	$id = intval($_POST['id']);
-	
+	$id     = intval( $_POST['id'] );
+
 	$saved = false;
-	
-	switch($action) {
+
+	switch ( $action ) {
 		case "add":
-			$title 		 = $db->prepare(htmlspecialchars($_POST['title']), 64);
-			$description = $db->prepare(htmlspecialchars($_POST['description']));
-			
+			$title       = $db->prepare( htmlspecialchars( $_POST['title'] ), 64 );
+			$description = $db->prepare( htmlspecialchars( $_POST['description'] ) );
+
 			$query = "INSERT INTO `global__Faqs` (`title`, `description`) VALUES ('$title', '$description')";
-			$db->query($query);
-			
+			$db->query( $query );
+
 			$saved = true;
-			
+
 			break;
-			
+
 		case "edit":
-			
-			if($id == 0) {
+
+			if ( $id == 0 ) {
 				$saved = false;
-			} else {
-			
-				$title 		 = $db->prepare(htmlspecialchars($_POST['title']), 64);
-				$description = $db->prepare(htmlspecialchars($_POST['description']));
-				
-				$query = "UPDATE `global__Faqs` SET `title`='$title', `description`='$description' WHERE `id`='$id'";
-				$db->query($query);
-				
-				$saved = true;
-				
 			}
-			
+			else {
+
+				$title       = $db->prepare( htmlspecialchars( $_POST['title'] ), 64 );
+				$description = $db->prepare( htmlspecialchars( $_POST['description'] ) );
+
+				$query = "UPDATE `global__Faqs` SET `title`='$title', `description`='$description' WHERE `id`='$id'";
+				$db->query( $query );
+
+				$saved = true;
+
+			}
+
 			break;
-			
+
 	} // SWITCH
-	
-	if($saved) {
-		die("{saved:true}");
+
+	if ( $saved ) {
+		die( "{saved:true}" );
 	}
-	
-	die("{saved:false}");
+
+	die( "{saved:false}" );
 } // POST
 
-$id = intval($_GET['id']);
+$id     = intval( $_GET['id'] );
 $action = $_GET['action'];
 
-switch($action) {
+switch ( $action ) {
 	case "add":
-		
+
 		echo <<<EOADD
 	<input type="hidden" name="action" value="$action" />
 	
@@ -76,19 +77,19 @@ switch($action) {
 	</tr>
 	</table>
 EOADD;
-		
+
 		break;
-		
+
 	case "edit":
-		
-		if($id == 0) {
-			die();	
+
+		if ( $id == 0 ) {
+			die();
 		}
-		
-		$query = $db->query("SELECT `title`, `description` FROM `global__Faqs` WHERE `id`='$id'");
-		if($row = $db->assoc($query)) {
+
+		$query = $db->query( "SELECT `title`, `description` FROM `global__Faqs` WHERE `id`='$id'" );
+		if ( $row = $db->assoc( $query ) ) {
 //			extract($row);
-		
+
 			echo <<<EOEDIT
 	<input type="hidden" name="action" value="$action" />
 	<input type="hidden" name="id" value="$id" />
@@ -107,19 +108,18 @@ EOADD;
 	</table>
 EOEDIT;
 		}
-	
+
 		break;
-		
+
 	case "del":
-		
-		if($id == 0) {
+
+		if ( $id == 0 ) {
 			die();
 		}
-		
-		$db->query("DELETE FROM `global__Faqs` WHERE `id`='$id'");
-		
+
+		$db->query( "DELETE FROM `global__Faqs` WHERE `id`='$id'" );
+
 		break;
-	
+
 } // SWITCH
 
-?>

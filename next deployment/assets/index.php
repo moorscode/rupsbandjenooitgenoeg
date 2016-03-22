@@ -1,6 +1,5 @@
 <?php
 
 // Redirector!
-header("Location: ../");
+header( "Location: ../" );
 
-?>

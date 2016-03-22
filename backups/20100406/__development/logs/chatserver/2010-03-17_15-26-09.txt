@@ -1,0 +1,31 @@
+
+[2010-03-17 15:26:09] Server 'chatserver' started at 192.168.1.36:8080
+[2010-03-17 15:26:09] Client #0 connected
+[2010-03-17 15:26:09] Client #0 requesting policy file
+[2010-03-17 15:26:09] Client #0 disconnected: 0 clients left.
+[2010-03-17 15:26:09] Client #0 connected
+[2010-03-17 15:26:09] Client #0 (Admin) identified: yes
+[2010-03-17 15:26:14] Client #0 disconnected: 0 clients left.
+[2010-03-17 15:26:15] Client #0 connected
+[2010-03-17 15:26:15] Client #0 requesting policy file
+[2010-03-17 15:26:15] Client #0 disconnected: 0 clients left.
+[2010-03-17 15:26:15] Client #0 connected
+[2010-03-17 15:26:15] Client #0 () identified: no
+[2010-03-17 15:26:21] Client #0 disconnected: 0 clients left.
+[2010-03-17 15:26:22] Client #0 connected
+[2010-03-17 15:26:22] Client #0 requesting policy file
+[2010-03-17 15:26:22] Client #0 disconnected: 0 clients left.
+[2010-03-17 15:26:22] Client #0 connected
+[2010-03-17 15:26:22] Client #0 () identified: no
+[2010-03-17 15:26:37] Client #0 disconnected: 0 clients left.
+[2010-03-17 15:26:37] Client #0 connected
+[2010-03-17 15:26:37] Client #0 requesting policy file
+[2010-03-17 15:26:37] Client #0 disconnected: 0 clients left.
+[2010-03-17 15:26:37] Client #0 connected
+[2010-03-17 15:26:37] Client #0 () identified: no
+[2010-03-17 15:26:47] Client #0 disconnected: 0 clients left.
+[2010-03-17 15:26:48] Client #0 connected
+[2010-03-17 15:26:48] Client #0 requesting policy file
+[2010-03-17 15:26:48] Client #0 disconnected: 0 clients left.
+[2010-03-17 15:26:48] Client #0 connected
+[2010-03-17 15:26:48] Client #0 () identified: no

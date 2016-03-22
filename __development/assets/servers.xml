@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servers>
+	<chatserver>
+		<server>109.72.80.136</server>
+		<port>8080</port>
+	</chatserver>
+	<gameserver>
+		<server>109.72.80.136</server>
+		<port>8081</port>
+	</gameserver>
+</servers>

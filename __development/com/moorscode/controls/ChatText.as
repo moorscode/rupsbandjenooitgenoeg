@@ -1,0 +1,1 @@
+﻿package com.moorscode.controls {	import fl.controls.TextArea;	import fl.events.ScrollEvent;		public class ChatText extends TextArea {				public function ChatText() { super(); }				override protected function updateScrollBars() {			super.updateScrollBars();		}	}}

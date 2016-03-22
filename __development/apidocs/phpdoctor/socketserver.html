@@ -1,0 +1,306 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+
+<meta name="generator" content="PHPDoctor 2RC4 (http://phpdoctor.sourceforge.net/)">
+<meta name="when" content="Tue, 15 Dec 2009 11:06:27 +0100">
+
+<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+<link rel="start" href="../overview-summary.html">
+
+<title>SocketServer (PHPDoctor)</title>
+
+</head>
+<body id="definition" onload="parent.document.title=document.title;">
+
+<div class="header">
+<h1>PHPDoctor</h1>
+<ul>
+<li><a href="../overview-summary.html">Overview</a></li>
+<li><a href="../phpdoctor/package-summary.html">Package</a></li>
+<li class="active">Class</li>
+<li><a href="../phpdoctor/package-tree.html">Tree</a></li>
+<li><a href="../deprecated-list.html">Deprecated</a></li>
+<li><a href="../index-all.html">Index</a></li>
+</ul>
+</div>
+
+<div class="small_links">
+<a href="../index.html" target="_top">Frames</a>
+<a href="../phpdoctor/socketserver.html" target="_top">No frames</a>
+</div>
+<div class="small_links">
+Summary: <a href="#summary_field">Field</a> | <a href="#summary_method">Method</a> | <a href="#summary_constr">Constr</a>
+Detail: <a href="#detail_field">Field</a> | <a href="#detail_method">Method</a> | <a href="#summary_constr">Constr</a>
+</div>
+<hr>
+
+<div class="qualifiedName">PHPDoctor.SocketServer</div>
+<div class="location">/assets/php/class.SocketServer.php at line 8</div>
+
+<h1>Class SocketServer</h1>
+
+<pre class="tree"><strong>SocketServer</strong><br /></pre>
+
+<hr>
+
+<p class="signature">public  class <strong>SocketServer</strong></p>
+
+<div class="comment" id="overview_description"><p>Class: Socket Server</p></div>
+
+<hr>
+
+<table id="summary_field">
+<tr><th colspan="2">Field Summary</th></tr>
+<tr>
+<td class="type"> Name of the config file to get IP/Port information from</td>
+<td class="description"><p class="name"><a href="#config_file">$config_file</a></p><p class="description"></p></td>
+</tr>
+<tr>
+<td class="type"> Reference to the database</td>
+<td class="description"><p class="name"><a href="#db">$db</a></p><p class="description"></p></td>
+</tr>
+<tr>
+<td class="type"> Readible identified of what server this is (chat / game)</td>
+<td class="description"><p class="name"><a href="#name">$name</a></p><p class="description"></p></td>
+</tr>
+<tr>
+<td class="type"> Port to listen on</td>
+<td class="description"><p class="name"><a href="#port">$port</a></p><p class="description"></p></td>
+</tr>
+<tr>
+<td class="type"> Server IP to listen on</td>
+<td class="description"><p class="name"><a href="#server">$server</a></p><p class="description"></p></td>
+</tr>
+</table>
+
+<table id="summary_constr">
+<tr><th colspan="2">Constructor Summary</th></tr>
+<tr>
+<td class="description"><p class="name"><a href="#SocketServer()">SocketServer</a>(mixed server_name, mixed config_file)</p><p class="description">Constructor: Initialize to use a server. </p></td>
+</tr>
+</table>
+
+<table id="summary_method">
+<tr><th colspan="2">Method Summary</th></tr>
+<tr>
+<td class="type"> void</td>
+<td class="description"><p class="name"><a href="#client_connected()">client_connected</a>(int index)</p><p class="description">When a client connects to the server, set defaults</p></td>
+</tr>
+<tr>
+<td class="type"> void</td>
+<td class="description"><p class="name"><a href="#client_disconnect()">client_disconnect</a>(int index)</p><p class="description">When a client disconnects from the server, clean up</p></td>
+</tr>
+<tr>
+<td class="type"> void</td>
+<td class="description"><p class="name"><a href="#client_identified()">client_identified</a>(int index, boolean success)</p><p class="description">When a client has been identified</p></td>
+</tr>
+<tr>
+<td class="type"> void</td>
+<td class="description"><p class="name"><a href="#connect()">connect</a>()</p><p class="description">Initialize network listeners</p></td>
+</tr>
+<tr>
+<td class="type"> void</td>
+<td class="description"><p class="name"><a href="#on_input()">on_input</a>(int index)</p><p class="description">Holder for on_input handling</p></td>
+</tr>
+<tr>
+<td class="type"> void</td>
+<td class="description"><p class="name"><a href="#send()">send</a>(int index, String data, mixed send_raw, boolean sendRaw)</p><p class="description">Send data to a specified client</p></td>
+</tr>
+<tr>
+<td class="type"> void</td>
+<td class="description"><p class="name"><a href="#send_to_all()">send_to_all</a>(int data, int exclude_index)</p><p class="description">Send data to all the connected clients</p></td>
+</tr>
+<tr>
+<td class="type"> void</td>
+<td class="description"><p class="name"><a href="#shutdown()">shutdown</a>(int index)</p><p class="description">Shutdown the socket server</p></td>
+</tr>
+<tr>
+<td class="type"> void</td>
+<td class="description"><p class="name"><a href="#wait_for_input()">wait_for_input</a>()</p><p class="description">Wait for client input to be parsed</p></td>
+</tr>
+</table>
+
+<h2 id="detail_field">Field Detail</h2>
+<div class="location">/assets/php/class.SocketServer.php at line 17</div>
+<h3 id="config_file">config_file</h3>
+<code class="signature">public  Name of the config file to get IP/Port information from <strong>$config_file</strong></code>
+<div class="details">
+<p></p></div>
+
+<hr>
+
+<div class="location">/assets/php/class.SocketServer.php at line 32</div>
+<h3 id="db">db</h3>
+<code class="signature">public  Reference to the database <strong>$db</strong></code>
+<div class="details">
+<p></p></div>
+
+<hr>
+
+<div class="location">/assets/php/class.SocketServer.php at line 12</div>
+<h3 id="name">name</h3>
+<code class="signature">public  Readible identified of what server this is (chat / game) <strong>$name</strong></code>
+<div class="details">
+<p></p></div>
+
+<hr>
+
+<div class="location">/assets/php/class.SocketServer.php at line 27</div>
+<h3 id="port">port</h3>
+<code class="signature">public  Port to listen on <strong>$port</strong></code>
+<div class="details">
+<p></p></div>
+
+<hr>
+
+<div class="location">/assets/php/class.SocketServer.php at line 22</div>
+<h3 id="server">server</h3>
+<code class="signature">public  Server IP to listen on <strong>$server</strong></code>
+<div class="details">
+<p></p></div>
+
+<hr>
+
+<h2 id="detail_constr">Constructor Detail</h2>
+<div class="location">/assets/php/class.SocketServer.php at line 37</div>
+<h3 id="SocketServer()">SocketServer</h3>
+<code class="signature">public <strong>SocketServer</strong>(mixed server_name, mixed config_file)</code>
+<div class="details">
+<p>Constructor: Initialize to use a server. Getting the server and port from the config file and updating stats.</p></div>
+
+<hr>
+
+<h2 id="detail_method">Method Detail</h2>
+<div class="location">/assets/php/class.SocketServer.php at line 287</div>
+<h3 id="client_connected()">client_connected</h3>
+<code class="signature">public  void <strong>client_connected</strong>(int index)</code>
+<div class="details">
+<p>When a client connects to the server, set defaults</p><dl>
+<dt>Parameters:</dt>
+<dd>index - Index of the client</dd>
+</dl>
+</div>
+
+<hr>
+
+<div class="location">/assets/php/class.SocketServer.php at line 297</div>
+<h3 id="client_disconnect()">client_disconnect</h3>
+<code class="signature">public  void <strong>client_disconnect</strong>(int index)</code>
+<div class="details">
+<p>When a client disconnects from the server, clean up</p><dl>
+<dt>Parameters:</dt>
+<dd>index - Index of the client</dd>
+</dl>
+</div>
+
+<hr>
+
+<div class="location">/assets/php/class.SocketServer.php at line 317</div>
+<h3 id="client_identified()">client_identified</h3>
+<code class="signature">public  void <strong>client_identified</strong>(int index, boolean success)</code>
+<div class="details">
+<p>When a client has been identified</p><dl>
+<dt>Parameters:</dt>
+<dd>index - Index of the client</dd>
+<dd>success - If the client was identified or denied</dd>
+</dl>
+</div>
+
+<hr>
+
+<div class="location">/assets/php/class.SocketServer.php at line 117</div>
+<h3 id="connect()">connect</h3>
+<code class="signature">public  void <strong>connect</strong>()</code>
+<div class="details">
+<p>Initialize network listeners</p></div>
+
+<hr>
+
+<div class="location">/assets/php/class.SocketServer.php at line 243</div>
+<h3 id="on_input()">on_input</h3>
+<code class="signature">public  void <strong>on_input</strong>(int index)</code>
+<div class="details">
+<p>Holder for on_input handling</p><dl>
+<dt>Parameters:</dt>
+<dd>index - Client index which has inputted something /</dd>
+</dl>
+</div>
+
+<hr>
+
+<div class="location">/assets/php/class.SocketServer.php at line 330</div>
+<h3 id="send()">send</h3>
+<code class="signature">public  void <strong>send</strong>(int index, String data, mixed send_raw, boolean sendRaw)</code>
+<div class="details">
+<p>Send data to a specified client</p><dl>
+<dt>Parameters:</dt>
+<dd>index - Index of the client</dd>
+<dd>data - Data to send to the client</dd>
+<dd>sendRaw - Embed XML around the data or not</dd>
+</dl>
+</div>
+
+<hr>
+
+<div class="location">/assets/php/class.SocketServer.php at line 342</div>
+<h3 id="send_to_all()">send_to_all</h3>
+<code class="signature">public  void <strong>send_to_all</strong>(int data, int exclude_index)</code>
+<div class="details">
+<p>Send data to all the connected clients</p><dl>
+<dt>Parameters:</dt>
+<dd>data - Data to send to the clients</dd>
+<dd>exclude_index - Exclude a client from recieving the data (Default: -1)</dd>
+</dl>
+</div>
+
+<hr>
+
+<div class="location">/assets/php/class.SocketServer.php at line 252</div>
+<h3 id="shutdown()">shutdown</h3>
+<code class="signature">public  void <strong>shutdown</strong>(int index)</code>
+<div class="details">
+<p>Shutdown the socket server</p><dl>
+<dt>Parameters:</dt>
+<dd>index - Shutdown requested by client index</dd>
+</dl>
+</div>
+
+<hr>
+
+<div class="location">/assets/php/class.SocketServer.php at line 148</div>
+<h3 id="wait_for_input()">wait_for_input</h3>
+<code class="signature">public  void <strong>wait_for_input</strong>()</code>
+<div class="details">
+<p>Wait for client input to be parsed</p></div>
+
+<hr>
+
+<div class="header">
+<h1>PHPDoctor</h1>
+<ul>
+<li><a href="../overview-summary.html">Overview</a></li>
+<li><a href="../phpdoctor/package-summary.html">Package</a></li>
+<li class="active">Class</li>
+<li><a href="../phpdoctor/package-tree.html">Tree</a></li>
+<li><a href="../deprecated-list.html">Deprecated</a></li>
+<li><a href="../index-all.html">Index</a></li>
+</ul>
+</div>
+
+<div class="small_links">
+<a href="../index.html" target="_top">Frames</a>
+<a href="../phpdoctor/socketserver.html" target="_top">No frames</a>
+</div>
+<div class="small_links">
+Summary: <a href="#summary_field">Field</a> | <a href="#summary_method">Method</a> | <a href="#summary_constr">Constr</a>
+Detail: <a href="#detail_field">Field</a> | <a href="#detail_method">Method</a> | <a href="#summary_constr">Constr</a>
+</div>
+<hr>
+
+<p id="footer">This document was generated by <a href="http://phpdoctor.sourceforge.net/">PHPDoctor: The PHP Documentation Creator</a></p>
+
+</body>
+
+</html>

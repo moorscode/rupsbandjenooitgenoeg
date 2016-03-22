@@ -1,0 +1,18 @@
+
+[2010-04-03 22:36:30] Server 'gameserver' started at 192.168.1.33:8081
+[2010-04-03 22:36:34] Client #0 connected
+[2010-04-03 22:36:34] Client #0 requesting policy file
+[2010-04-03 22:36:34] Client #0 disconnected: 0 clients left.
+[2010-04-03 22:36:34] Client #0 connected
+[2010-04-03 22:36:34] Client #0 (Moorscode) identified: yes
+[2010-04-03 22:36:35] Client #0 disconnected: 0 clients left.
+[2010-04-03 22:36:38] Client #0 connected
+[2010-04-03 22:36:38] Client #0 requesting policy file
+[2010-04-03 22:36:38] Client #0 disconnected: 0 clients left.
+[2010-04-03 22:36:38] Client #0 connected
+[2010-04-03 22:36:38] Client #0 (Moorscode) identified: yes
+[2010-04-03 22:36:39] Client #0 disconnected: 0 clients left.
+[2010-04-03 22:36:42] Client #0 connected
+[2010-04-03 22:36:42] Client #0 (Admin) identified: yes
+[2010-04-03 22:36:42] Client #0 disconnected: 0 clients left.
+[2010-04-03 22:36:42] Terminated server (requested by Admin)

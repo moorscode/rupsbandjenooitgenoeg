@@ -1,0 +1,12 @@
+
+[2010-04-05 21:35:11] Server 'gameserver' started at 192.168.1.33:8081
+[2010-04-05 21:35:15] Client #0 connected
+[2010-04-05 21:35:15] Client #0 requesting policy file
+[2010-04-05 21:35:15] Client #1 connected
+[2010-04-05 21:35:18] Client #2 connected
+[2010-04-05 21:35:18] Client #2 requesting policy file
+[2010-04-05 21:35:18] Client #3 connected
+[2010-04-05 21:35:26] Client #4 connected
+[2010-04-05 21:36:18] Client #5 connected
+[2010-04-05 22:03:18] Client #6 connected
+[2010-04-05 22:03:18] Client #5 requesting policy file

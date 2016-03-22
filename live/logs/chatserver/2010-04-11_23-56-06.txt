@@ -1,0 +1,2 @@
+
+[2010-04-11 23:56:06] Server 'chatserver' started at 192.168.1.33:8080

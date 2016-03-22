@@ -1,0 +1,2 @@
+
+[2010-03-19 11:20:45] Could not bind to socket.

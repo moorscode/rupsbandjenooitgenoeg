@@ -1,0 +1,232 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+
+<meta name="generator" content="PHPDoctor 2RC4 (http://phpdoctor.sourceforge.net/)">
+<meta name="when" content="Tue, 15 Dec 2009 11:06:27 +0100">
+
+<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+<link rel="start" href="../overview-summary.html">
+
+<title>PHPDoctor (PHPDoctor)</title>
+
+</head>
+<body id="package" onload="parent.document.title=document.title;">
+
+<div class="header">
+<h1>PHPDoctor</h1>
+<ul>
+<li><a href="../overview-summary.html">Overview</a></li>
+<li class="active">Package</li>
+<li>Class</li><li><a href="../phpdoctor/package-tree.html">Tree</a></li>
+<li><a href="../deprecated-list.html">Deprecated</a></li>
+<li><a href="../index-all.html">Index</a></li>
+</ul>
+</div>
+
+<div class="small_links">
+<a href="../index.html" target="_top">Frames</a>
+<a href="../phpdoctor/package-summary.html" target="_top">No frames</a>
+</div>
+<hr>
+
+<h1>Package PHPDoctor</h1>
+
+<table class="title">
+<tr><th colspan="2" class="title">Class Summary</th></tr>
+<tr><td class="name"><a href="../phpdoctor/chatserver.html">ChatServer</a></td><td class="description">Chat Server</td></tr>
+<tr><td class="name"><a href="../phpdoctor/database.html">Database</a></td><td class="description">Class: Database
+Handle all the database queries and prepare data to be entered correctly.</td></tr>
+<tr><td class="name"><a href="../phpdoctor/gameserver.html">GameServer</a></td><td class="description">Game Server</td></tr>
+<tr><td class="name"><a href="../phpdoctor/socketserver.html">SocketServer</a></td><td class="description">Class: Socket Server</td></tr>
+<tr><td class="name"><a href="../phpdoctor/statistics.html">Statistics</a></td><td class="description">Class: Statistics.</td></tr>
+</table>
+
+<table class="title">
+<tr><th colspan="2" class="title">Function Summary</th></tr>
+<tr><td class="name"><a href="package-functions.html#__url_decode">__url_decode</a></td><td class="description">URLDecode data from a value until nothing is changed anymore</td></tr>
+<tr><td class="name"><a href="package-functions.html#clean_input_data">clean_input_data</a></td><td class="description">Clean the data from _GET and _POST input</td></tr>
+<tr><td class="name"><a href="package-functions.html#email">email</a></td><td class="description">Send email - when it fails, log it to the message-list of the admin</td></tr>
+<tr><td class="name"><a href="package-functions.html#error_handler">error_handler</a></td><td class="description">Handle PHP Error in a custom way; If there is no write access to the log directory output PHP errors to the database</td></tr>
+<tr><td class="name"><a href="package-functions.html#get">get</a></td><td class="description">Implements the Database Prepare function to ease use</td></tr>
+<tr><td class="name"><a href="package-functions.html#get_value_by_path">get_value_by_path</a></td><td class="description">Retrieve data from the Associative Array in an easy way</td></tr>
+<tr><td class="name"><a href="package-functions.html#html_safe">html_safe</a></td><td class="description">Convert the data for HTML use</td></tr>
+<tr><td class="name"><a href="package-functions.html#is_valid_email">is_valid_email</a></td><td class="description">Validate entered emailaddress</td></tr>
+<tr><td class="name"><a href="package-functions.html#kill_server">kill_server</a></td><td class="description">Kill the Chat / Game server - only usable by Admin</td></tr>
+<tr><td class="name"><a href="package-functions.html#log_error">log_error</a></td><td class="description">Log the last error before closing a server.</td></tr>
+<tr><td class="name"><a href="package-functions.html#login">login</a></td><td class="description">Login function</td></tr>
+<tr><td class="name"><a href="package-functions.html#logout">logout</a></td><td class="description">Logout function</td></tr>
+<tr><td class="name"><a href="package-functions.html#push_message">push_message</a></td><td class="description">Push message to the queue to display</td></tr>
+<tr><td class="name"><a href="package-functions.html#set_cookie">set_cookie</a></td><td class="description">Save / Update the Cookies</td></tr>
+<tr><td class="name"><a href="package-functions.html#trace">trace</a></td><td class="description">Trace output to the logfile or just to the screen</td></tr>
+<tr><td class="name"><a href="package-functions.html#twitter_time_period">twitter_time_period</a></td><td class="description">Twitter Time Period formatting</td></tr>
+<tr><td class="name"><a href="package-functions.html#xml2array">xml2array</a></td><td class="description">Convert XML to Associative Array</td></tr>
+</table>
+
+<table class="title">
+<tr><th colspan="2" class="title">Global Summary</th></tr>
+<tr><td class="name"><a href="package-globals.html#DB_CONFIG">DB_CONFIG</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#DB_DATABASE">DB_DATABASE</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#DB_HOST">DB_HOST</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#DB_PASSWORD">DB_PASSWORD</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#DB_USERNAME">DB_USERNAME</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#_COOKIE">_COOKIE</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#_GET">_GET</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#_POST">_POST</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#_SERVER">_SERVER</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#_SESSION">_SESSION</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#action">action</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#active">active</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#average">average</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#axis">axis</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#axis_values">axis_values</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#bug">bug</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#bug_data">bug_data</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#bug_index">bug_index</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#bug_query">bug_query</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#bugs">bugs</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#chat">chat</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#chat_div">chat_div</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#chat_holder">chat_holder</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#chat_id">chat_id</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#chat_online_status">chat_online_status</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#chat_server_online">chat_server_online</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#count">count</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#created">created</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#data">data</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#data_register">data_register</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#data_values">data_values</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#data_verify">data_verify</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#day">day</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#days_ago">days_ago</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#db">db</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#description">description</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#display_count">display_count</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#divide_axis_by">divide_axis_by</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#divide_data_by">divide_data_by</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#do">do</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#email">email</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#endtime">endtime</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#error">error</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#error_query">error_query</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#errors">errors</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#event_day">event_day</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#faq">faq</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#faq_query">faq_query</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#faqs">faqs</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#first_online">first_online</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#game">game</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#game_div">game_div</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#game_holder">game_holder</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#game_id">game_id</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#game_length">game_length</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#game_online_status">game_online_status</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#game_server_online">game_server_online</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#game_type">game_type</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#games_data">games_data</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#high">high</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#highest_status">highest_status</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#i">i</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#id">id</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#idea_data">idea_data</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#idle_avg">idle_avg</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#idle_data">idle_data</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#index">index</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#last_online">last_online</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#limit">limit</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#log_file">log_file</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#max_value">max_value</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#message">message</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#min_value">min_value</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#msg">msg</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#offline_timestamp">offline_timestamp</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#online_timestamp">online_timestamp</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#pass">pass</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#password">password</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#password2">password2</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#pid">pid</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#player_query">player_query</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#query">query</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#query_users">query_users</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#question_data">question_data</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#queue_data">queue_data</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#queue_length">queue_length</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#queuetime">queuetime</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#range">range</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#readable_bug_status">readable_bug_status</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#reg">reg</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#reg_query">reg_query</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#register_xml">register_xml</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#reply">reply</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#result">result</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#root">root</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#row">row</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#saved">saved</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#scale">scale</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#select_options">select_options</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#select_status">select_status</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#server_type">server_type</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#server_xml">server_xml</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#show_num_days">show_num_days</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#start">start</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#starttime">starttime</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#stats">stats</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#status">status</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#status_description">status_description</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#status_history">status_history</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#status_list">status_list</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#status_query">status_query</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#status_text">status_text</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#steps">steps</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#tabs">tabs</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#tabs_data">tabs_data</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#test">test</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#text">text</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#time">time</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#title">title</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#today">today</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#type">type</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#type_stripped">type_stripped</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#ui">ui</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#ui_query">ui_query</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#uid">uid</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#update">update</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#user">user</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#user_id">user_id</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#user_input">user_input</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#username">username</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#value">value</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#values">values</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#verified">verified</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#verify">verify</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#verify_email">verify_email</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#what">what</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#when">when</a></td><td class="description"></td></tr>
+<tr><td class="name"><a href="package-globals.html#xml_title">xml_title</a></td><td class="description"></td></tr>
+</table>
+
+<hr>
+
+<div class="header">
+<h1>PHPDoctor</h1>
+<ul>
+<li><a href="../overview-summary.html">Overview</a></li>
+<li class="active">Package</li>
+<li>Class</li><li><a href="../phpdoctor/package-tree.html">Tree</a></li>
+<li><a href="../deprecated-list.html">Deprecated</a></li>
+<li><a href="../index-all.html">Index</a></li>
+</ul>
+</div>
+
+<div class="small_links">
+<a href="../index.html" target="_top">Frames</a>
+<a href="../phpdoctor/package-summary.html" target="_top">No frames</a>
+</div>
+<hr>
+
+<p id="footer">This document was generated by <a href="http://phpdoctor.sourceforge.net/">PHPDoctor: The PHP Documentation Creator</a></p>
+
+</body>
+
+</html>

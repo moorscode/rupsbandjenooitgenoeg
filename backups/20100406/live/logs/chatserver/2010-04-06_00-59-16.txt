@@ -1,0 +1,16 @@
+
+[2010-04-06 00:59:16] Server 'chatserver' started at 192.168.1.33:8080
+[2010-04-06 00:59:21] Client #0 connected
+[2010-04-06 00:59:21] Client #0 requesting policy file
+[2010-04-06 00:59:21] Client #1 connected
+[2010-04-06 00:59:22] Client #2 connected
+[2010-04-06 00:59:22] Client #2 requesting policy file
+[2010-04-06 00:59:22] Client #3 connected
+[2010-04-06 00:59:27] Client #4 connected
+[2010-04-06 00:59:42] Client #5 connected
+[2010-04-06 00:59:42] Client #4 requesting policy file
+[2010-04-06 00:59:42] Client #4 disconnected: 5 clients left.
+[2010-04-06 00:59:42] Client #4 requesting policy file
+[2010-04-06 00:59:42] Client #5 connected
+[2010-04-06 01:00:19] Client #6 connected
+[2010-04-06 01:00:23] Client #7 connected

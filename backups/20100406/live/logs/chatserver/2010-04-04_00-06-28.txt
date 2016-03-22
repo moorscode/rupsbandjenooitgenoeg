@@ -1,0 +1,306 @@
+
+[2010-04-04 00:06:28] Server 'chatserver' started at 192.168.1.33:8080
+[2010-04-04 00:06:30] Client #0 connected
+[2010-04-04 00:06:30] Client #0 requesting policy file
+[2010-04-04 00:06:30] Client #0 disconnected: 0 clients left.
+[2010-04-04 00:06:30] Client #0 connected
+[2010-04-04 00:06:30] Client #0 (Admin) identified: yes
+[2010-04-04 00:06:30] Client #1 connected
+[2010-04-04 00:06:30] Client #1 requesting policy file
+[2010-04-04 00:06:30] Client #1 disconnected: 1 clients left.
+[2010-04-04 00:06:30] Client #1 connected
+[2010-04-04 00:06:30] Client #1 (Moorscode) identified: yes
+[2010-04-04 00:06:57] Client #0 disconnected: 1 clients left.
+[2010-04-04 00:07:01] Client #1 connected
+[2010-04-04 00:07:01] Client #1 requesting policy file
+[2010-04-04 00:07:01] Client #1 disconnected: 1 clients left.
+[2010-04-04 00:07:01] Client #1 connected
+[2010-04-04 00:07:01] Client #1 (Admin) identified: yes
+[2010-04-04 00:07:10] Client #1 disconnected: 1 clients left.
+[2010-04-04 00:07:11] Client #1 connected
+[2010-04-04 00:07:11] Client #1 requesting policy file
+[2010-04-04 00:07:11] Client #1 disconnected: 1 clients left.
+[2010-04-04 00:07:11] Client #1 connected
+[2010-04-04 00:07:15] Client #1 disconnected: 1 clients left.
+[2010-04-04 00:07:16] Client #1 connected
+[2010-04-04 00:07:16] Client #1 requesting policy file
+[2010-04-04 00:07:16] Client #1 disconnected: 1 clients left.
+[2010-04-04 00:07:16] Client #1 connected
+[2010-04-04 00:07:16] Client #1 (Gast #1) identified: yes
+[2010-04-04 00:08:40] Client #1 disconnected: 1 clients left.
+[2010-04-04 00:08:41] Client #1 connected
+[2010-04-04 00:08:41] Client #1 requesting policy file
+[2010-04-04 00:08:41] Client #1 disconnected: 1 clients left.
+[2010-04-04 00:08:41] Client #1 connected
+[2010-04-04 00:08:41] Client #1 (Gast #2) identified: yes
+[2010-04-04 00:08:47] Client #1 disconnected: 1 clients left.
+[2010-04-04 00:08:48] Client #1 connected
+[2010-04-04 00:08:48] Client #1 requesting policy file
+[2010-04-04 00:08:48] Client #1 disconnected: 1 clients left.
+[2010-04-04 00:08:48] Client #1 connected
+[2010-04-04 00:08:48] Client #1 (Gast #3) identified: yes
+[2010-04-04 00:08:55] Client #1 disconnected: 1 clients left.
+[2010-04-04 00:08:55] Client #1 connected
+[2010-04-04 00:08:55] Client #1 requesting policy file
+[2010-04-04 00:08:55] Client #1 disconnected: 1 clients left.
+[2010-04-04 00:08:55] Client #1 connected
+[2010-04-04 00:08:55] Client #1 (Gast #4) identified: yes
+[2010-04-04 00:09:22] Client #1 disconnected: 1 clients left.
+[2010-04-04 00:11:33] Client #0 disconnected: 0 clients left.
+[2010-04-04 00:11:33] Client #0 connected
+[2010-04-04 00:11:33] Client #0 requesting policy file
+[2010-04-04 00:11:33] Client #0 disconnected: 0 clients left.
+[2010-04-04 00:11:33] Client #0 connected
+[2010-04-04 00:11:33] Client #0 (Moorscode) identified: yes
+[2010-04-04 00:11:37] Client #0 disconnected: 0 clients left.
+[2010-04-04 00:11:38] Client #0 connected
+[2010-04-04 00:11:38] Client #0 requesting policy file
+[2010-04-04 00:11:38] Client #0 disconnected: 0 clients left.
+[2010-04-04 00:11:38] Client #0 connected
+[2010-04-04 00:11:38] Client #0 (Gast #5) identified: yes
+[2010-04-04 00:12:21] Client #0 disconnected: 0 clients left.
+[2010-04-04 00:12:21] Client #0 connected
+[2010-04-04 00:12:21] Client #0 requesting policy file
+[2010-04-04 00:12:21] Client #0 disconnected: 0 clients left.
+[2010-04-04 00:12:21] Client #0 connected
+[2010-04-04 00:12:21] Client #0 (Gast #6) identified: yes
+[2010-04-04 00:12:37] Client #0 disconnected: 0 clients left.
+[2010-04-04 00:12:37] Client #0 connected
+[2010-04-04 00:12:37] Client #0 requesting policy file
+[2010-04-04 00:12:37] Client #0 disconnected: 0 clients left.
+[2010-04-04 00:12:37] Client #0 connected
+[2010-04-04 00:12:38] Client #0 (Gast #7) identified: yes
+[2010-04-04 00:13:09] Client #0 disconnected: 0 clients left.
+[2010-04-04 00:13:10] Client #0 connected
+[2010-04-04 00:13:10] Client #0 requesting policy file
+[2010-04-04 00:13:10] Client #0 disconnected: 0 clients left.
+[2010-04-04 00:13:10] Client #0 connected
+[2010-04-04 00:13:10] Client #0 (Gast #8) identified: yes
+[2010-04-04 00:13:48] Client #0 disconnected: 0 clients left.
+[2010-04-04 00:13:48] Client #0 connected
+[2010-04-04 00:13:48] Client #0 requesting policy file
+[2010-04-04 00:13:48] Client #0 disconnected: 0 clients left.
+[2010-04-04 00:13:48] Client #0 connected
+[2010-04-04 00:13:48] Client #0 (Gast #9) identified: yes
+[2010-04-04 00:14:02] Client #0 disconnected: 0 clients left.
+[2010-04-04 00:14:02] Client #0 connected
+[2010-04-04 00:14:02] Client #0 requesting policy file
+[2010-04-04 00:14:02] Client #0 disconnected: 0 clients left.
+[2010-04-04 00:14:02] Client #0 connected
+[2010-04-04 00:14:02] Client #0 (Gast #10) identified: yes
+[2010-04-04 00:14:11] Client #0 disconnected: 0 clients left.
+[2010-04-04 00:14:11] Client #0 connected
+[2010-04-04 00:14:11] Client #0 requesting policy file
+[2010-04-04 00:14:11] Client #0 disconnected: 0 clients left.
+[2010-04-04 00:14:11] Client #0 connected
+[2010-04-04 00:14:11] Client #0 (Moorscode) identified: yes
+[2010-04-04 00:14:13] Client #0 disconnected: 0 clients left.
+[2010-04-04 00:14:13] Client #0 connected
+[2010-04-04 00:14:13] Client #0 requesting policy file
+[2010-04-04 00:14:13] Client #0 disconnected: 0 clients left.
+[2010-04-04 00:14:13] Client #0 connected
+[2010-04-04 00:14:13] Client #0 (Gast #11) identified: yes
+[2010-04-04 00:14:18] Client #0 disconnected: 0 clients left.
+[2010-04-04 00:14:18] Client #0 connected
+[2010-04-04 00:14:18] Client #0 requesting policy file
+[2010-04-04 00:14:18] Client #0 disconnected: 0 clients left.
+[2010-04-04 00:14:18] Client #0 connected
+[2010-04-04 00:14:18] Client #0 (Gast #12) identified: yes
+[2010-04-04 00:21:07] Client #0 disconnected: 0 clients left.
+[2010-04-04 00:23:19] Client #0 connected
+[2010-04-04 00:23:19] Client #0 requesting policy file
+[2010-04-04 00:23:19] Client #0 disconnected: 0 clients left.
+[2010-04-04 00:23:19] Client #0 connected
+[2010-04-04 00:23:19] Client #0 (Gast #13) identified: yes
+[2010-04-04 00:23:23] Client #0 disconnected: 0 clients left.
+[2010-04-04 00:23:23] Client #0 connected
+[2010-04-04 00:23:23] Client #0 requesting policy file
+[2010-04-04 00:23:23] Client #0 disconnected: 0 clients left.
+[2010-04-04 00:23:23] Client #0 connected
+[2010-04-04 00:23:23] Client #0 (Moorscode) identified: yes
+[2010-04-04 00:23:30] Client #0 disconnected: 0 clients left.
+[2010-04-04 00:23:30] Client #0 connected
+[2010-04-04 00:23:30] Client #0 requesting policy file
+[2010-04-04 00:23:30] Client #0 disconnected: 0 clients left.
+[2010-04-04 00:23:31] Client #0 connected
+[2010-04-04 00:23:31] Client #0 (Moorscode) identified: yes
+[2010-04-04 00:23:35] Client #0 disconnected: 0 clients left.
+[2010-04-04 00:23:35] Client #0 connected
+[2010-04-04 00:23:35] Client #0 requesting policy file
+[2010-04-04 00:23:35] Client #0 disconnected: 0 clients left.
+[2010-04-04 00:23:35] Client #0 connected
+[2010-04-04 00:23:35] Client #0 (Moorscode) identified: yes
+[2010-04-04 00:23:57] Client #0 disconnected: 0 clients left.
+[2010-04-04 00:23:57] Client #0 connected
+[2010-04-04 00:23:57] Client #0 requesting policy file
+[2010-04-04 00:23:57] Client #0 disconnected: 0 clients left.
+[2010-04-04 00:23:57] Client #0 connected
+[2010-04-04 00:23:57] Client #0 (Moorscode) identified: yes
+[2010-04-04 00:24:58] Client #0 disconnected: 0 clients left.
+[2010-04-04 16:46:50] Client #0 connected
+[2010-04-04 16:46:50] Client #0 requesting policy file
+[2010-04-04 16:46:51] Client #0 disconnected: 0 clients left.
+[2010-04-04 16:46:51] Client #0 connected
+[2010-04-04 16:46:51] Client #0 (Gast #14) identified: yes
+[2010-04-04 16:46:55] Client #0 disconnected: 0 clients left.
+[2010-04-04 16:46:56] Client #0 connected
+[2010-04-04 16:46:56] Client #0 requesting policy file
+[2010-04-04 16:46:56] Client #0 disconnected: 0 clients left.
+[2010-04-04 16:46:56] Client #0 connected
+[2010-04-04 16:46:56] Client #0 (Gast #15) identified: yes
+[2010-04-04 16:47:00] Client #0 disconnected: 0 clients left.
+[2010-04-04 16:47:01] Client #0 connected
+[2010-04-04 16:47:01] Client #0 requesting policy file
+[2010-04-04 16:47:01] Client #0 disconnected: 0 clients left.
+[2010-04-04 16:47:01] Client #0 connected
+[2010-04-04 16:47:01] Client #0 (Gast #16) identified: yes
+[2010-04-04 16:47:09] Client #0 disconnected: 0 clients left.
+[2010-04-04 16:47:10] Client #0 connected
+[2010-04-04 16:47:10] Client #0 requesting policy file
+[2010-04-04 16:47:10] Client #0 disconnected: 0 clients left.
+[2010-04-04 16:47:10] Client #0 connected
+[2010-04-04 16:47:10] Client #0 (Gast #17) identified: yes
+[2010-04-04 17:05:56] Client #0 disconnected: 0 clients left.
+[2010-04-04 17:05:56] Client #0 connected
+[2010-04-04 17:05:56] Client #0 requesting policy file
+[2010-04-04 17:05:56] Client #0 disconnected: 0 clients left.
+[2010-04-04 17:05:57] Client #0 connected
+[2010-04-04 17:05:57] Client #0 (Gast #18) identified: yes
+[2010-04-04 17:06:16] Client #0 disconnected: 0 clients left.
+[2010-04-04 17:06:16] Client #0 connected
+[2010-04-04 17:06:16] Client #0 requesting policy file
+[2010-04-04 17:06:16] Client #0 disconnected: 0 clients left.
+[2010-04-04 17:06:16] Client #0 connected
+[2010-04-04 17:06:16] Client #0 (Gast #19) identified: yes
+[2010-04-04 17:15:23] Client #0 disconnected: 0 clients left.
+[2010-04-04 17:15:23] Client #0 connected
+[2010-04-04 17:15:23] Client #0 requesting policy file
+[2010-04-04 17:15:23] Client #0 disconnected: 0 clients left.
+[2010-04-04 17:15:23] Client #0 connected
+[2010-04-04 17:15:23] Client #0 (Moorscode) identified: yes
+[2010-04-04 17:15:25] Client #0 disconnected: 0 clients left.
+[2010-04-04 17:15:26] Client #0 connected
+[2010-04-04 17:15:26] Client #0 requesting policy file
+[2010-04-04 17:15:26] Client #0 disconnected: 0 clients left.
+[2010-04-04 17:15:26] Client #0 connected
+[2010-04-04 17:15:26] Client #0 (Gast #20) identified: yes
+[2010-04-04 17:57:11] Client #0 disconnected: 0 clients left.
+[2010-04-04 17:57:11] Client #0 connected
+[2010-04-04 17:57:11] Client #0 requesting policy file
+[2010-04-04 17:57:11] Client #0 disconnected: 0 clients left.
+[2010-04-04 17:57:11] Client #0 connected
+[2010-04-04 17:57:11] Client #0 (Moorscode) identified: yes
+[2010-04-04 17:59:28] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:52:37] Client #0 connected
+[2010-04-04 18:52:37] Client #0 requesting policy file
+[2010-04-04 18:52:37] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:52:37] Client #0 connected
+[2010-04-04 18:52:37] Client #0 (Gast #21) identified: yes
+[2010-04-04 18:53:06] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:53:06] Client #0 connected
+[2010-04-04 18:53:06] Client #0 requesting policy file
+[2010-04-04 18:53:06] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:53:06] Client #0 connected
+[2010-04-04 18:53:06] Client #0 (Gast #22) identified: yes
+[2010-04-04 18:53:51] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:53:52] Client #0 connected
+[2010-04-04 18:53:52] Client #0 requesting policy file
+[2010-04-04 18:53:52] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:53:52] Client #0 connected
+[2010-04-04 18:53:52] Client #0 (Gast #23) identified: yes
+[2010-04-04 18:53:54] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:53:55] Client #0 connected
+[2010-04-04 18:53:55] Client #0 requesting policy file
+[2010-04-04 18:53:55] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:53:55] Client #0 connected
+[2010-04-04 18:53:57] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:53:58] Client #0 connected
+[2010-04-04 18:53:58] Client #0 requesting policy file
+[2010-04-04 18:53:58] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:53:58] Client #0 connected
+[2010-04-04 18:53:58] Client #0 (Gast #24) identified: yes
+[2010-04-04 18:53:59] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:54:00] Client #0 connected
+[2010-04-04 18:54:00] Client #0 requesting policy file
+[2010-04-04 18:54:00] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:54:00] Client #0 connected
+[2010-04-04 18:54:00] Client #0 (Gast #25) identified: yes
+[2010-04-04 18:54:02] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:54:03] Client #0 connected
+[2010-04-04 18:54:03] Client #0 requesting policy file
+[2010-04-04 18:54:03] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:54:03] Client #0 connected
+[2010-04-04 18:54:03] Client #0 (Gast #26) identified: yes
+[2010-04-04 18:54:10] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:54:10] Client #0 connected
+[2010-04-04 18:54:10] Client #0 requesting policy file
+[2010-04-04 18:54:10] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:54:10] Client #0 connected
+[2010-04-04 18:54:10] Client #0 (Gast #27) identified: yes
+[2010-04-04 18:54:15] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:54:15] Client #0 connected
+[2010-04-04 18:54:15] Client #0 requesting policy file
+[2010-04-04 18:54:15] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:54:15] Client #0 connected
+[2010-04-04 18:54:15] Client #0 (Gast #28) identified: yes
+[2010-04-04 18:54:32] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:54:32] Client #0 connected
+[2010-04-04 18:54:32] Client #0 requesting policy file
+[2010-04-04 18:54:32] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:54:32] Client #0 connected
+[2010-04-04 18:54:32] Client #0 (Gast #29) identified: yes
+[2010-04-04 18:54:38] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:54:38] Client #0 connected
+[2010-04-04 18:54:38] Client #0 requesting policy file
+[2010-04-04 18:54:38] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:54:38] Client #0 connected
+[2010-04-04 18:54:38] Client #0 (Gast #30) identified: yes
+[2010-04-04 18:54:42] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:54:42] Client #0 connected
+[2010-04-04 18:54:42] Client #0 requesting policy file
+[2010-04-04 18:54:42] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:54:43] Client #0 connected
+[2010-04-04 18:54:43] Client #0 (Gast #31) identified: yes
+[2010-04-04 18:54:44] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:54:45] Client #0 connected
+[2010-04-04 18:54:45] Client #0 requesting policy file
+[2010-04-04 18:54:45] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:54:45] Client #0 connected
+[2010-04-04 18:54:45] Client #0 (Gast #32) identified: yes
+[2010-04-04 18:54:48] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:54:49] Client #0 connected
+[2010-04-04 18:54:49] Client #0 requesting policy file
+[2010-04-04 18:54:49] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:54:49] Client #0 connected
+[2010-04-04 18:54:49] Client #0 (Gast #33) identified: yes
+[2010-04-04 18:55:11] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:55:12] Client #0 connected
+[2010-04-04 18:55:12] Client #0 requesting policy file
+[2010-04-04 18:55:12] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:55:12] Client #0 connected
+[2010-04-04 18:55:12] Client #0 (Gast #34) identified: yes
+[2010-04-04 18:55:29] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:55:29] Client #0 connected
+[2010-04-04 18:55:29] Client #0 requesting policy file
+[2010-04-04 18:55:29] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:55:29] Client #0 connected
+[2010-04-04 18:55:29] Client #0 (Gast #35) identified: yes
+[2010-04-04 18:57:08] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:57:08] Client #0 connected
+[2010-04-04 18:57:08] Client #0 requesting policy file
+[2010-04-04 18:57:08] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:57:08] Client #0 connected
+[2010-04-04 18:57:08] Client #0 (Gast #36) identified: yes
+[2010-04-04 18:57:11] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:57:12] Client #0 connected
+[2010-04-04 18:57:12] Client #0 requesting policy file
+[2010-04-04 18:57:12] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:57:12] Client #0 connected
+[2010-04-04 18:57:12] Client #0 (Moorscode) identified: yes
+[2010-04-04 18:57:13] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:57:14] Client #0 connected
+[2010-04-04 18:57:14] Client #0 requesting policy file
+[2010-04-04 18:57:14] Client #0 disconnected: 0 clients left.
+[2010-04-04 18:57:14] Client #0 connected
+[2010-04-04 18:57:14] Client #0 (Gast #37) identified: yes
+[2010-04-04 18:57:36] Client #0 disconnected: 0 clients left.

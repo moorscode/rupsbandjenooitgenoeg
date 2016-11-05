@@ -1,7 +1,11 @@
-yeah yeah yeahs, atrack remix, heads will roll
+yeah yeah yeahs, a-track remix, heads will roll
 
 
-Rank x -> Rank x+1 = 20 * x^2Rank x [kills] Rank x+y = 5 + (y*2) pntRank x [kills] Rank x-y = 5 – y pnt (min: 1pnt)Rank x [killed by] Rank x+y = -0Rank x [killed by] Rank x-y = -2 + -(y*2)
+Rank x -> Rank x+1 = 20 * x^2
+Rank x [kills] Rank x+y = 5 + (y*2) pnt
+Rank x [kills] Rank x-y = 5 – y pnt (min: 1pnt)
+Rank x [killed by] Rank x+y = -0
+Rank x [killed by] Rank x-y = -2 + -(y*2)
 
 
 killer_rank = 1 + floor( sqrt(killer_points / 20) )

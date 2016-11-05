@@ -1,3 +1,0 @@
-
-[2010-04-10 12:17:26] Server 'chatserver' started at 192.168.1.33:8080
-[2010-04-10 12:17:28] Client #0 connected

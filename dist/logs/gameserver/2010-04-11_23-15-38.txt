@@ -1,0 +1,13 @@
+
+[2010-04-11 23:15:39] Server 'gameserver' started at 192.168.1.33:8081
+[2010-04-11 23:15:44] Client #0 connected
+[2010-04-11 23:15:44] Client #0 requesting policy file
+[2010-04-11 23:15:47] Client #0 disconnected: 0 clients left.
+[2010-04-11 23:15:48] Client #0 connected
+[2010-04-11 23:15:48] Client #0 requesting policy file
+[2010-04-11 23:15:51] Client #0 disconnected: 0 clients left.
+[2010-04-11 23:17:13] Client #0 connected
+[2010-04-11 23:17:13] Client #0 requesting policy file
+[2010-04-11 23:17:16] Client #0 disconnected: 0 clients left.
+[2010-04-11 23:18:46] Client #0 connected
+[2010-04-11 23:18:46] Client #0 (Admin) identified: yes
